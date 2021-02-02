@@ -1,0 +1,12 @@
+---
+- name: this playbook is multitask
+  hosts: managable-nodes
+  tasks:
+        - name: creating a multiple users
+          user: 
+                name: roy
+                state: present
+        - name: removing a service
+          yum:
+                name: telnet
+                state: absent       
