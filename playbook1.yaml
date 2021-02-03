@@ -10,3 +10,7 @@
           yum:
                 name: telnet
                 state: absent       
+	- name: installing a service  
+	  yum:
+		name: nfs-utils
+		state: present
